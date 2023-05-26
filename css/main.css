@@ -1,0 +1,478 @@
+p {
+  line-height: 20px;
+}
+
+.slick-track,
+.slick-list {
+  /* 슬라이드 깜빡임 해결 */
+  transition-delay: 30ms;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.tit {
+  margin: 0 auto 60px auto;
+}
+
+.tit h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.tit p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.wrap {
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #444;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 999;
+
+  transition: 0.5s;
+}
+
+.header h1 img {
+  filter: invert(100%);
+  transition: 0.5s;
+}
+
+.header.on {
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+}
+
+.header.on img {
+  filter: invert(0%);
+}
+
+.header .inner {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.header .inner h1 img {
+  width: 100px;
+}
+
+.header .gnb {
+  margin: 0 0 0 auto;
+}
+
+.header .gnb > ul {
+  display: flex;
+  gap: 40px;
+}
+
+/* 메인 슬라이드 */
+.main_visual {
+  position: relative;
+}
+.main_visual .main_slide figure {
+  position: relative;
+  height: 100vh;
+}
+
+.main_visual .main_slide .main_slide_sm6 {
+  background: url(../images/main_slide_01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .main_slide_qm6 {
+  background: url(../images/main_slide_02.jpg) no-repeat center center/cover;
+}
+.main_visual .main_slide .main_slide_qm6_q {
+  background: url(../images/main_slide_03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .slogan {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.main_visual .slogan h2 {
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #000;
+}
+
+.main_visual .slogan p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 200;
+  text-shadow: 0 0 3px #000;
+}
+
+.main_visual .numbering {
+  display: flex;
+  position: absolute;
+
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-weight: 200;
+  text-shadow: 0 0 3px #000;
+  color: #fff;
+}
+
+.main_visual .scroll_icon {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.main_visual .scroll_icon i {
+  margin: 0 0 5px 18px;
+  font-size: 20px;
+}
+
+.main_visual .scroll_icon .scroll_txt {
+  font-weight: 200;
+}
+/* 
+.main_visual .slick-dots li {
+  display: none;
+}
+.main_visual.slick-dots li.slick-active {
+  display: block;
+} */
+
+/* ----- 제품 슬라이드 ----- */
+
+.product {
+  padding: 100px 0;
+  position: relative;
+}
+
+.product .arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1400px;
+  width: 100%;
+}
+
+.product .arrows i {
+  font-size: 30px;
+  color: #000;
+  padding: 20px;
+}
+
+.product .arrows .left {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.product .arrows .right {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+/* .product .tit {
+  margin: 0 auto 60px auto;
+}
+
+.product .tit h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.product .tit p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+} */
+
+.product .content .product_slide {
+  margin: 0 -15px;
+}
+
+.product .content .product_slide figure {
+  padding: 0 15px;
+}
+
+.product .content .product_slide figure img {
+  margin: 0 0 20px 0;
+}
+
+.product .content .product_slide figure strong {
+  display: block;
+  /* 상 우 하 좌 */
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.product .content .product_slide figure .btn {
+  font-size: 0;
+  text-align: center;
+}
+
+.product .content .product_slide figure .btn a {
+  display: inline-block;
+  font-size: 16px;
+  width: 170px;
+  padding: 10px 14px;
+  background: #333;
+  color: #fff;
+  margin: 0 5px 5px 0;
+}
+
+.product .content .product_slide figure .btn a:hover {
+  background: #ffcc00;
+  color: #333;
+}
+
+/* ----- 서비스 소개 ----- */
+
+.introduce {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+.introduce figure {
+  display: flex;
+  padding: 50px 0 0 0;
+  height: 350px;
+}
+
+.introduce figure .img_box img {
+  transition: 0.7s;
+}
+
+.introduce figure .img_box img:hover {
+  transform: scale(1.1);
+}
+
+.introduce figure > div {
+  flex: 1;
+}
+
+.introduce .service_intro figure .img_box {
+  overflow: hidden;
+}
+
+.introduce .service_intro figure .txt_box {
+  background: #fff;
+  padding: 50px 40px;
+}
+
+.introduce .service_intro figure .txt_box strong {
+  display: block;
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.introduce .service_intro figure .txt_box p {
+  display: block;
+  margin: 0 0 40px 0;
+  font-weight: 300;
+}
+
+.introduce .service_intro figure .txt_box a {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 5px 12px;
+}
+
+/* 뉴스 및 이벤트 */
+
+.inside {
+  padding: 100px 0;
+}
+
+.inside .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.inside .content > div {
+  flex: 1 0 300px;
+}
+
+.inside ul {
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.inside ul li {
+  padding: 20px 0;
+}
+
+.inside ul > li ~ li {
+  border-top: 1px solid #ddd;
+}
+
+.inside strong {
+  display: block;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.inside .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.inside .news_txt strong:hover {
+  color: #ffcc00;
+  cursor: pointer;
+}
+
+.inside .company_news strong {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 6px 12px;
+  background: #000;
+  color: #fff;
+}
+
+.inside .car_news strong {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 6px 12px;
+  background: #888;
+  color: #fff;
+}
+
+.inside p {
+  word-break: keep-all;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #777;
+}
+
+.inside .date {
+  font-size: 14px;
+  color: #777;
+}
+
+.inside .event figure {
+  display: flex;
+}
+
+.inside .event figure > div {
+  flex: 1;
+}
+
+.inside .event_img img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.inside .event_txt {
+  margin: 0 0 0 15px;
+}
+
+.inside .event_txt a {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 5px 12px;
+}
+
+.to_top {
+  position: fixed;
+  bottom: -100px;
+  right: 100px;
+  opacity: 0;
+
+  transition: 0.7s;
+}
+
+.to_top.on {
+  bottom: 100px;
+  opacity: 1;
+}
+
+.to_top i {
+  background: #333;
+  color: #ffcc00;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #f9f9f9;
+  color: #333;
+  padding: 50px;
+}
+
+.footer .inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .corp_item {
+  display: flex;
+}
+
+.footer .corp_item > li {
+  position: relative;
+  padding: 0 10px 0 0;
+  font-size: 14px;
+}
+
+.footer .corp_item > li ~ li::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -5px;
+  width: 1px;
+  height: 9px;
+  background: #d4d4d4;
+}
+
+.footer .corp_item li strong {
+  font-weight: bold;
+}
+
+.footer address {
+  width: 1200px;
+  margin: auto;
+  padding: 0 0 0 15px;
+  font-style: normal;
+}
+
+.footer address .corp_txt {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
